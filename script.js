@@ -1,14 +1,15 @@
 // Prototipo para lo que será una tienda para mascotas
-
+function saludar() {
     let nombre= prompt("Ingresa tu nombre")
     if (nombre !== "" && isNaN (nombre)) {
     alert(`Hola, ${nombre}`)
     }
     else {
         alert ("Ingresa un formato válido");
-        prompt("Ingresa tu nombre")
+        saludar();
     }
-
+}
+saludar(); 
 
 
 
